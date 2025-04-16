@@ -3,67 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BiblioTK</title>
+
+    <!--font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- css -->
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header></header>
-    <div class="container"></div>
-    <aside>
-      <h3>Filtros</h3>
-      <input type="text" placeholder="buscar" />
-      <label for=""><input type="checkbox" />Oferta</label>
-      <label for=""><input type="checkbox" />Cuotas</label>
-      <br />
-    </aside>
-    <h1>Contenido de la web</h1>
+    <!-- header comienzo-->
+    <header class="header">
+      <div class="header-1">
+        <a href="#" class="logo"><i class="fas fa-book"></i>BiblioTK</a>
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="Busque aquí"
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <div id="login-btn" class="fas fa-user"></div>
+        </div>
+      </div>
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="#home">Inicio</a>
+          <a href="#featured">Promocionados</a>
+          <a href="#arrivals">Novedades</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
 
-    <p>un parrafo de texto de subtitulo</p>
-    <a href="www.google.com"></a>
+    <!-- header final -->
 
-    <div>
-      <h2>Productos</h2>
-      <h1>Catálogo de Productos</h1>
-      <table>
-        <tr>
-          <th>Nombre del Producto</th>
-          <th>Características</th>
-          <th>Precio</th>
-        </tr>
-        <tr>
-          <td>Producto A</td>
-          <td>Característica 1, Característica 2, Característica 3</td>
-          <td>$10000.00</td>
-          <td><button class="comprar">Comprar</button></td>
-        </tr>
-        <tr>
-          <td>Producto B</td>
-          <td>Característica 1, Característica 2, Característica 3</td>
-          <td>$10000.00</td>
-          <td><button class="comprar">Comprar</button></td>
-        </tr>
-        <tr>
-          <td>Producto C</td>
-          <td>Característica 1, Característica 2, Característica 3</td>
-          <td>$10000.00</td>
-          <td><button class="comprar">Comprar</button></td>
-        </tr>
-        <tr>
-          <td>Producto D</td>
-          <td>Característica 1, Característica 2, Característica 3</td>
-          <td>$10000.00</td>
-          <td><button class="comprar">Comprar</button></td>
-        </tr>
-        <tr>
-          <td>Producto E</td>
-          <td>Característica 1, Característica 2, Característica 3</td>
-          <td>$10000.00</td>
-          <td><button class="comprar">Comprar</button></td>
-        </tr>
-      </table>
-    </div>
-
-    <h2>Envianos tus comentarios</h2>
-    <a href="contacto.html"></a>
+    <!-- JS -->
+    <script src="js/script.js"></script>
   </body>
 </html>
