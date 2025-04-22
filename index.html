@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BiblioTK</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!--font awesome -->
     <link
       rel="stylesheet"
@@ -18,7 +23,7 @@
     <!-- header comienzo-->
     <header class="header">
       <div class="header-1">
-        <a href="#" class="logo"><i class="fas fa-book"></i>BiblioTK</a>
+        <a href="#" class="logo">BiblioTK</a>
         <form action="" class="search-form">
           <input
             type="search"
@@ -38,17 +43,97 @@
       <div class="header-2">
         <nav class="navbar">
           <a href="#home">Inicio</a>
-          <a href="#featured">Promocionados</a>
-          <a href="#arrivals">Novedades</a>
+          <a href="#promos">Promocionados</a>
+          <a href="#nuevos">Novedades</a>
           <a href="#reviews">Reviews</a>
-          <a href="#contact">Contacto</a>
+          <a href="#blogs">Blog</a>
         </nav>
       </div>
     </header>
 
     <!-- header final -->
 
+    <!-- navbar inferior -->
+    <nav class="bottom-navbar">
+      <a href="#home" class="fas fa-home"></a>
+      <a href="#promos" class="fas fa-list"></a>
+      <a href="#nuevos" class="fas fa-tags"></a>
+      <a href="#reviews" class="fas fa-comments"></a>
+      <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+    <!-- login form -->
+
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+
+      <form action="">
+        <h3>Login</h3>
+        <span>usuario</span>
+        <input
+          type="email"
+          class="box"
+          name=""
+          placeholder="ingrese su correo electrónico"
+        />
+        <span>contraseña</span>
+        <input
+          type="password"
+          class="box"
+          name=""
+          placeholder="ingrese su contraseña"
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">recordarme</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <p>olivdé mi contraseña <a href="#">cliquear aquí</a></p>
+        <p>quiero crear una cuenta <a href="#">crear cuenta</a></p>
+      </form>
+    </div>
+
+    <!-- home comienzo -->
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>hasta 75% off</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            dolorum, inventore minima perspiciatis ab iusto iure nam cupiditate
+          </p>
+          <a href="#" class="btn">Comprar ahora</a>
+        </div>
+        <div class="swiper books-slider">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"
+              ><img src="img/libro1.jpg" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="img/libro2.jpg" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="img/libro3.jpg" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="img/libro4.jpg" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="img/libro5.jpg" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="img/libro6.jpg" alt=""
+            /></a>
+          </div>
+          <img src="img/stand1.png" class="stand" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- home final -->
+
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,6 +1,19 @@
 searchForm = document.querySelector(".search-form");
+
 document.querySelector("#search-btn").onclick = () => {
   searchForm.classList.toggle("active");
+};
+
+//funcion para el login
+let loginForm = document.querySelector(".login-form-container");
+
+document.querySelector("#login-btn").onclick = () => {
+  console.log("Login clicked!");
+  loginForm.classList.toggle("active");
+};
+
+document.querySelector("#close-login-btn").onclick = () => {
+  loginForm.classList.remove("active");
 };
 
 //funcion para dejar fijo el menu despues de escrolear/ remover cuadro de búsqueda /
@@ -21,3 +34,24 @@ window.onload = () => {
     document.querySelector(".header .header-2").classList.remove("active");
   }
 };
+
+//funcion para el slider de la biblioteca
+var swiper = new Swiper(".books-slider", {
+  loop: true,
+  centerSlides: true,
+  autoplay: {
+    delay: 9500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
