@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --green: #27ae60;
-  --dark-color: #219150;
+  --red: #ae3027;
+  --dark-color: #912e21;
   --black: #444;
   --light-color: #666;
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -51,7 +51,7 @@ section {
   padding: 0.9rem 3rem;
   border-radius: 0.5rem;
   color: #fff;
-  background: var(--green);
+  background: var(--red);
   font-size: 1.7rem;
   cursor: pointer;
   font-weight: 500;
@@ -76,7 +76,7 @@ section {
 }
 
 .header .header-1 .logo i {
-  color: var(--green);
+  color: var(--red);
   padding-right: 0.8rem;
 }
 .header .header-1 .search-form {
@@ -104,7 +104,7 @@ section {
   cursor: pointer;
 }
 .header .header-1 .search-form label:hover {
-  color: var(--green);
+  color: var(--red);
 }
 .header .header-1 .icons div,
 .header .header-1 .icons a {
@@ -116,7 +116,7 @@ section {
 
 .header .header-1 .icons div:hover,
 .header .header-1 .icons a:hover {
-  color: var(--green);
+  color: var(--red);
 }
 
 #search-btn {
@@ -124,7 +124,7 @@ section {
 }
 
 .header .header-2 {
-  background: var(--green);
+  background: var(--red);
 }
 
 .header .header-2 .navbar {
@@ -154,7 +154,7 @@ body {
 
 .bottom-navbar {
   text-align: center;
-  background: var(--green);
+  background: var(--red);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -250,7 +250,7 @@ body {
 }
 
 .login-form-container form p a {
-  color: var(--green);
+  color: var(--red);
   text-decoration: underline;
 }
 
