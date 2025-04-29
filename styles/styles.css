@@ -19,8 +19,6 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: all 0.2s linear;
-  transition: width none;
 }
 
 html {
