@@ -55,3 +55,31 @@ var swiper = new Swiper(".books-slider", {
     },
   },
 });
+
+var swiper = new Swiper(".featured-slider", {
+  spaceBetween: 10,
+  loop: true,
+  centerSlides: true,
+  autoplay: {
+    delay: 9500,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextE1: ".swiper-button-next",
+    prevE1: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
