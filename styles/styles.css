@@ -408,7 +408,7 @@ body {
 }
 
 .footer {
-  background: var(--light-color);
+  background: #f3f3f3;
 }
 
 .footer .box-container {
