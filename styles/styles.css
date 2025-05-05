@@ -570,6 +570,48 @@ body {
   line-height: 2;
 }
 
+/* mi biblioTK    */
+
+.arrivals .wrapper_biblio {
+  display: flex;
+  justify-content: center;
+}
+
+.arrivals .arrivals-slider .box_biblio {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  border: var(--border);
+  margin: 1rem;
+}
+.arrivals .arrivals-slider .box_biblio:hover {
+  border: var(--border-hover);
+}
+
+.arrivals .arrivals-slider .box_biblio .image img {
+  height: 15rem;
+}
+
+.arrivals .arrivals-slider .box_biblio .content h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+.arrivals .arrivals-slider .box_biblio .content .price {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+.arrivals .arrivals-slider .box_biblio .content .price span {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-decoration: line-through;
+}
+.arrivals .arrivals-slider .box_biblio .content .stars i {
+  font-size: 1.5rem;
+  color: var(--red);
+}
+
 /*media queries*/
 @media (max-width: 991px) {
   html {
