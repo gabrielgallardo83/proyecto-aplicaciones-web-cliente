@@ -653,6 +653,49 @@ section {
   display: block;
 }
 
+/* ejemplo compra */
+
+.compra .box_compra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 10px;
+}
+
+.compra .box_compra h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.compra .box_compra .contenido,
+.ilustracion {
+  flex: 1 1 45%;
+}
+
+.compra .box_compra p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.compra .box_compra .ilustracion img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.compra .box_compra .stars i {
+  font-size: 1.5rem;
+  color: var(--red);
+}
+
+.compra .box_compra .contenido .price {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding-top: 1rem 1rem;
+}
+
 /*media queries*/
 @media (max-width: 991px) {
   html {
@@ -710,6 +753,14 @@ section {
   }
 
   .acerca .box_acerca .ilustracion {
+    flex: 1 1 100%;
+  }
+
+  .compra .box_compra {
+    flex-direction: column;
+  }
+
+  .compra .box_compra .ilustracion {
     flex: 1 1 100%;
   }
 }
