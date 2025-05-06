@@ -753,7 +753,7 @@ textarea {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background: #ffffff;
+  background: #fff;
   padding: 1rem 2rem;
   border-radius: 1rem;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
@@ -871,6 +871,15 @@ textarea {
 
   .compra .box_compra .ilustracion {
     flex: 1 1 100%;
+  }
+
+  .campo {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .filtro-horizontal {
+    flex-direction: column;
   }
 }
 
