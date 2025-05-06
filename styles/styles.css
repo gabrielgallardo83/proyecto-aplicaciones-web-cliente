@@ -173,9 +173,9 @@ section {
   right: 0;
   z-index: 1000;
 }
-body {
-  /* height: 300rem; */
-}
+/* body {
+  height: 300rem; 
+} */
 
 .bottom-navbar {
   text-align: center;
@@ -506,9 +506,9 @@ body {
 .deal .image {
   flex: 1 1 42rem;
 }
-.deal .image img {
-  /* width: 100%; */
-}
+/*.deal .image img {
+  width: 100%; 
+}*/
 
 .deal .content h3 {
   color: var(--red);
@@ -574,7 +574,8 @@ body {
 
 .arrivals .wrapper_biblio {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .arrivals .arrivals-slider .box_biblio {
@@ -584,6 +585,7 @@ body {
   padding: 2rem 1rem;
   border: var(--border);
   margin: 1rem;
+  flex: 1 1 300px;
 }
 .arrivals .arrivals-slider .box_biblio:hover {
   border: var(--border-hover);
