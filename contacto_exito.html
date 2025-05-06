@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,8 @@
 
     <!-- css -->
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Contacto</title>
+
+    <title>Gracias por comunicarte</title>
   </head>
   <body>
     <!-- header comienzo-->
@@ -29,16 +30,16 @@
         </form>
         <div class="icons">
           <div id="search-btn" class="fas fa-search"></div>
-          <a href="deseados.html" class="fas fa-star" title="Deseados"></a>
+          <a href="#" class="fas fa-star" title="Deseados"></a>
           <a href="#" class="fas fa-shopping-cart" title="Carrito"></a>
           <div id="login-btn" class="fas fa-user" title="Cuenta"></div>
         </div>
       </div>
       <div class="header-2">
         <nav class="navbar">
-          <a href="#home">Inicio</a>
+          <a href="index.html">Inicio</a>
           <a href="mi_biblio.html">mi biblioTK</a>
-          <a href="blogs.html">blogs</a>
+          <a href="#">blogs</a>
           <a href="#reviews">Contacto</a>
         </nav>
       </div>
@@ -48,10 +49,10 @@
 
     <!-- navbar inferior -->
     <nav class="bottom-navbar">
-      <a href="#" class="fas fa-home"></a>
+      <a href="index.html" class="fas fa-home"></a>
       <a href="mi_biblio.html" class="fas fa-list"></a>
       <a href="deseados.html" class="fas fa-book"></a>
-      <a href="blogs.html" class="fas fa-tags"></a>
+      <a href="#" class="fas fa-tags"></a>
       <a href="contacto.html" class="fas fa-envelope"></a>
     </nav>
 
@@ -86,58 +87,29 @@
       </form>
     </div>
 
+    <!-- login fin formulario -->
+
     <!-- home comienzo -->
 
-    <section class="container_form">
-      <h3>Contactanos</h3>
-      <div class="content">
-        <form action="contacto_exito.html">
-          <label for="fname">Nombre</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Tu nombre.."
-            required
-          />
-
-          <label for="lname">Apellido</label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Tu apellido.."
-          />
-
-          <label for="email">Correo electrónico</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Tu correo.."
-            required
-          />
-
-          <label for="motivo">Motivo</label>
-          <select id="motivo" name="motivo">
-            <option value="reclamo">Reclamo</option>
-            <option value="sugerencia">Sugerencia</option>
-            <option value="consulta">Consulta</option>
-          </select>
-
-          <label for="subject">Mensaje</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Comience a escribir aquí.."
-            style="height: 20rem"
-          ></textarea>
-
-          <input type="submit" value="Enviar" />
-        </form>
-      </div>
+    <section class="acerca">
+        <div class="box_acerca">
+            <div class="contenido">
+                <h1>GRACIAS POR TU MENSAJE, TE ESTAREMOS RESPONDIENDO A LA BREVEDAD.</h1>
+                
+                <a href="index.html" class="btn">volver</a>
+            </div>
+            <div class="ilustracion">
+                <img src="img/blog2.jpg" alt="">
+            </div>
+    
+    
     </section>
+
+
     <!-- home final -->
+
+
+
 
     <!-- footer comienzo -->
     <section class="footer">
@@ -147,9 +119,7 @@
           <a href="mi_biblio.html"><i class="fas fa-list"></i>mi biblioTK</a>
           <a href="deseados.html"><i class="fas fa-book"></i>deseados</a>
           <a href="blogs.html"><i class="fas fa-tags"></i>blogs</a>
-          <a href="nosotros.html"
-            ><i class="fas fa-arrow-right"></i>acerca de</a
-          >
+          <a href="nosotros.html"><i class="fas fa-arrow-right"></i>acerca de</a>
         </div>
         <div class="box">
           <h3>Encontranos en:</h3>
@@ -184,7 +154,5 @@
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-
-    <!-- login fin formulario -->
   </body>
 </html>
