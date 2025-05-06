@@ -742,9 +742,67 @@ textarea {
 }
 
 .container_form .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+  border-radius: 0.5rem;
+  background-color: var(--light-color);
+  padding: 2rem;
+}
+
+.filtro-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+  gap: 1rem;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  max-width: 120rem;
+  margin: auto;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campo label {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.campo select,
+.campo input[type="number"] {
+  padding: 0.4rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  min-width: 13rem;
+}
+
+.estado {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.estado label {
+  margin: 0;
+  font-weight: normal;
+}
+
+.boton {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: var(--dark-color);
 }
 
 /*media queries*/

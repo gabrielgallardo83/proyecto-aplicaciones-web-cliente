@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Búsqueda</title>
+
+    <!-- swipper para la galería -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- header comienzo-->
+    <header class="header">
+      <div class="header-1">
+        <a href="index.html" class="logo">BiblioTK</a>
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="Busque aquí"
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-star" title="Deseados"></a>
+          <a
+            href="carrito.html"
+            class="fas fa-shopping-cart"
+            title="Carrito"
+          ></a>
+          <div id="login-btn" class="fas fa-user" title="Cuenta"></div>
+        </div>
+      </div>
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="index.html">Inicio</a>
+          <a href="mi_biblio.html">mi biblioTK</a>
+          <a href="blogs.html">blogs</a>
+          <a href="contacto.html">contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- header final -->
+    <!-- navbar inferior -->
+    <nav class="bottom-navbar">
+      <a href="index.html" class="fas fa-home"></a>
+      <a href="mi_biblio.html" class="fas fa-list"></a>
+      <a href="#" class="fas fa-book"></a>
+      <a href="blogs.html" class="fas fa-tags"></a>
+      <a href="contacto.html" class="fas fa-envelope"></a>
+    </nav>
+
+    <!-- login inicio formulario -->
+
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+
+      <form action="">
+        <h3>Login</h3>
+        <span>usuario</span>
+        <input
+          type="email"
+          class="box"
+          name=""
+          placeholder="ingrese su correo electrónico"
+        />
+        <span>contraseña</span>
+        <input
+          type="password"
+          class="box"
+          name=""
+          placeholder="ingrese su contraseña"
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">recordarme</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <p>olivdé mi contraseña <a href="#">cliquear aquí</a></p>
+        <p>quiero crear una cuenta <a href="#">crear cuenta</a></p>
+      </form>
+    </div>
+
+    <!-- login fin formulario -->
+
+    <!-- novedades comienzo -->
+    <div>
+      <form class="filtro-horizontal">
+        <div class="campo">
+          <label for="temas">Temas</label>
+          <select id="temas" multiple>
+            <option>Ficción</option>
+            <option>No ficción</option>
+            <option>Ciencia</option>
+            <option>Historia</option>
+            <option>Fantasía</option>
+            <option>Misterio</option>
+            <option>Romance</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="precio-min">Precio mín.</label>
+          <input type="number" id="precio-min" placeholder="0" />
+        </div>
+
+        <div class="campo">
+          <label for="precio-max">Precio máx.</label>
+          <input type="number" id="precio-max" placeholder="1000" />
+        </div>
+
+        <div class="campo estado">
+          <input type="checkbox" id="nuevo" name="estado" value="nuevo" />
+          <label for="nuevo">Nuevo</label>
+          <input type="checkbox" id="usado" name="estado" value="usado" />
+          <label for="usado">Usado</label>
+        </div>
+
+        <div class="campo">
+          <label for="orden">Ordenar por</label>
+          <select id="orden">
+            <option value="mas-vendidos">Más vendidos</option>
+            <option value="mayor-precio">Mayor precio</option>
+            <option value="menor-precio">Menor precio</option>
+            <option value="nombre">Nombre</option>
+          </select>
+        </div>
+
+        <button type="submit" class="boton">Buscar</button>
+      </form>
+    </div>
+
+    <section class="arrivals" id="arrivals">
+      <h1 class="heading"><span>16 resultados</span></h1>
+
+      <div class="arrivals-slider">
+        <div class="wrapper_biblio">
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Harry Potter</h3>
+              <div class="price">JK Rowling</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>una lección olvidada</h3>
+              <div class="price">guillermo altares</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>los juicios de salem</h3>
+              <div class="price">autor desconocido</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro4.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>cuentos macabros</h3>
+              <div class="price">edgar allan poe</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro5.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>el aleph</h3>
+              <div class="price">jorge luis borges</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro6.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>el descubrimiento</h3>
+              <div class="price">deborah harkness</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro7.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>the mithology</h3>
+              <div class="price">peter fleming</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro8.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>the curious case</h3>
+              <div class="price">f. scott fitzgerald</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro9.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>cadaver exquisito</h3>
+              <div class="price">agustina bazterrica</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro10.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>astronautas</h3>
+              <div class="price">stanislaw lem</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro11.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>guerra mundial z</h3>
+              <div class="price">max brooks</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro12.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>nieve en marte</h3>
+              <div class="price">pablo tebar</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro13.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>sistemas criticos</h3>
+              <div class="price">martha wells</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro14.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>2010 odisea 2</h3>
+              <div class="price">arthur c. clarke</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro15.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>la era de la supernova</h3>
+              <div class="price">cixin liu</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+          <a href="compra.html" class="box_biblio">
+            <div class="image">
+              <img src="img/libro16.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>metro 2033</h3>
+              <div class="price">dmitry glukhovsky</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- novedades final -->
+
+    <!-- footer comienzo -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Links</h3>
+          <a href="mi_biblio.html"><i class="fas fa-list"></i>mi biblioTK</a>
+          <a href="deseados.html"><i class="fas fa-book"></i>deseados</a>
+          <a href="blogs.html"><i class="fas fa-tags"></i>blogs</a>
+          <a href="nosotros.html"
+            ><i class="fas fa-arrow-right"></i>acerca de</a
+          >
+        </div>
+        <div class="box">
+          <h3>Encontranos en:</h3>
+          <a href="tel:555-555-5555"><i class="fas fa-phone"></i>11 365 4558</a>
+          <a href="mailto:contacto@bibliotk.com"
+            ><i class="fas fa-envelope"></i>contacto@bibliotk.com</a
+          >
+          <a
+            href="https://www.google.com/maps/place/Av.+Rivadavia+2060,+C1033AAX+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.6095622,-58.3957382,1003m/data=!3m2!1e3!4b1!4m6!3m5!1s0x95bccae837749923:0xbab77ef8d82f1592!8m2!3d-34.6095622!4d-58.3957382!16s%2Fg%2F11tk2c75xw?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            ><i class="fas fa-map-marker-alt"></i>rivadavia 2059 - 1° piso -
+            CABA</a
+          >
+          <a href="contacto.html"><i class="fas fa-arrow-right"></i>via web</a>
+        </div>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.facebook.com/"
+          class="fab fa-facebook-f"
+          target="_blank"
+        ></a>
+        <a href="https://x.com/" class="fab fa-twitter" target="_blank"></a>
+        <a
+          href="https://www.instagram.com/"
+          class="fab fa-instagram"
+          target="_blank"
+        ></a>
+      </div>
+    </section>
+    <!-- footer final -->
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
