@@ -3,32 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- css -->
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Document</title>
+    <title>Contacto</title>
   </head>
   <body>
-    <h2>Contactanos</h2>
+    <!-- header comienzo-->
+    <header class="header">
+      <div class="header-1">
+        <a href="#" class="logo">BiblioTK</a>
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="Busque aquí"
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="deseados.html" class="fas fa-star" title="Deseados"></a>
+          <a href="#" class="fas fa-shopping-cart" title="Carrito"></a>
+          <div id="login-btn" class="fas fa-user" title="Cuenta"></div>
+        </div>
+      </div>
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="#home">Inicio</a>
+          <a href="mi_biblio.html">mi biblioTK</a>
+          <a href="blogs.html">blogs</a>
+          <a href="#reviews">Contacto</a>
+        </nav>
+      </div>
+    </header>
 
-    <form action="" method="post">
-      <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" id="nombre" required />
-      <br />
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" required />
-      <br />
-      <label for="mensaje">Mensaje:</label>
-      <textarea
-        type="text"
-        name="mensaje"
-        id="mensaje"
-        cols="30"
-        rows="10"
-        required
-      >
-      </textarea>
+    <!-- header final -->
 
-      <br />
-      <input type="submit" value="Enviar" />
-    </form>
+    <!-- navbar inferior -->
+    <nav class="bottom-navbar">
+      <a href="#" class="fas fa-home"></a>
+      <a href="mi_biblio.html" class="fas fa-list"></a>
+      <a href="deseados.html" class="fas fa-book"></a>
+      <a href="blogs.html" class="fas fa-tags"></a>
+      <a href="contacto.html" class="fas fa-envelope"></a>
+    </nav>
+
+    <!-- login inicio formulario -->
+
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+
+      <form action="">
+        <h3>Login</h3>
+        <span>usuario</span>
+        <input
+          type="email"
+          class="box"
+          name=""
+          placeholder="ingrese su correo electrónico"
+        />
+        <span>contraseña</span>
+        <input
+          type="password"
+          class="box"
+          name=""
+          placeholder="ingrese su contraseña"
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">recordarme</label>
+        </div>
+        <input type="submit" value="sign in" class="btn" />
+        <p>olivdé mi contraseña <a href="#">cliquear aquí</a></p>
+        <p>quiero crear una cuenta <a href="#">crear cuenta</a></p>
+      </form>
+    </div>
+
+    <!-- footer comienzo -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>footer 1</h3>
+          <a href=""><i class="fas fa-map-marker-alt"></i>lorem 1</a>
+          <a href=""><i class="fas fa-map-marker-alt"></i>lorem 2</a>
+          <a href=""><i class="fas fa-map-marker-alt"></i>lorem 3</a>
+        </div>
+        <div class="box">
+          <h3>footer 2</h3>
+          <a href=""><i class="fas fa-arrow-right"></i>lorem 1</a>
+          <a href=""><i class="fas fa-arrow-right"></i>lorem 2</a>
+          <a href=""><i class="fas fa-arrow-right"></i>lorem 3</a>
+        </div>
+      </div>
+      <div class="share">
+        <a
+          href="https://www.facebook.com/"
+          class="fab fa-facebook-f"
+          target="_blank"
+        ></a>
+        <a href="https://x.com/" class="fab fa-twitter" target="_blank"></a>
+        <a
+          href="https://www.instagram.com/"
+          class="fab fa-instagram"
+          target="_blank"
+        ></a>
+      </div>
+    </section>
+    <!-- footer final -->
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- login fin formulario -->
   </body>
 </html>

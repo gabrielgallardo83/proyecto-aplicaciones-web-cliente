@@ -38,10 +38,14 @@ window.onload = () => {
 //funcion para el slider de la biblioteca
 var swiper = new Swiper(".books-slider", {
   loop: true,
-  centerSlides: true,
+  centeredSlides: true,
   autoplay: {
     delay: 9500,
     disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     0: {
@@ -56,17 +60,45 @@ var swiper = new Swiper(".books-slider", {
   },
 });
 
-var swiper = new Swiper(".featured-slider", {
+// var swiper = new Swiper(".featured-slider", {
+//   spaceBetween: 10,
+//   loop: true,
+//   centeredSlides: true,
+//   autoplay: {
+//     delay: 9500,
+//     disableOnInteraction: false,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//     },
+//     450: {
+//       slidesPerView: 2,
+//     },
+//     768: {
+//       slidesPerView: 3,
+//     },
+//     1024: {
+//       slidesPerView: 4,
+//     },
+//   },
+// });
+
+var swiper = new Swiper(".arrivals-slider", {
   spaceBetween: 10,
   loop: true,
-  centerSlides: true,
+  centeredSlides: false,
   autoplay: {
     delay: 9500,
     disableOnInteraction: false,
   },
   navigation: {
-    nextE1: ".swiper-button-next",
-    prevE1: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     0: {
@@ -75,6 +107,7 @@ var swiper = new Swiper(".featured-slider", {
     450: {
       slidesPerView: 2,
     },
+
     768: {
       slidesPerView: 3,
     },
@@ -84,38 +117,18 @@ var swiper = new Swiper(".featured-slider", {
   },
 });
 
-var swiper = new Swiper(".arrivals-slider", {
-  spaceBetween: 10,
-  loop: true,
-  centerSlides: true,
-  autoplay: {
-    delay: 9500,
-    disableOnInteraction: false,
-  },
-
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
-
 var swiper = new Swiper(".blogs-slider", {
   spaceBetween: 10,
   loop: true,
-  centerSlides: true,
+  centeredSlides: true,
   autoplay: {
     delay: 9500,
     disableOnInteraction: false,
   },
-
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   breakpoints: {
     0: {
       slidesPerView: 1,
