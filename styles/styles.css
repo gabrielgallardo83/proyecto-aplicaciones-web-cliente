@@ -747,11 +747,11 @@ textarea {
   padding: 2rem;
 }
 
-.filtro-horizontal {
+.filtro {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centra horizontalmente */
-  align-items: center; /* centra verticalmente */
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   background: #ffffff;
   padding: 1rem 2rem;
