@@ -614,6 +614,39 @@ section {
   color: var(--red);
 }
 
+/*nosotros */
+
+.acerca .box_acerca {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  padding: 10px;
+}
+
+.acerca .box_acerca h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.acerca .box_acerca .contenido,
+.ilustracion {
+  flex: 1 1 45%;
+}
+
+.acerca .box_acerca p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.acerca .box_acerca .ilustracion img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /*media queries*/
 @media (max-width: 991px) {
   html {
@@ -665,6 +698,13 @@ section {
 
   .home .row .content h3 {
     font-size: 3.5rem;
+  }
+  .acerca .box_acerca {
+    flex-direction: column;
+  }
+
+  .acerca .box_acerca .ilustracion {
+    flex: 1 1 100%;
   }
 }
 
